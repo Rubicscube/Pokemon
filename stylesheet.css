@@ -1,4 +1,97 @@
+* {
+  transition: all 0.5s ease; }
+
+#CONTAINER {
+  border: 1px solid red; }
+
 body {
-  background-color: red; }
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-size: cover;
+  background: linear-gradient(90deg, #0f7a03 47%, #25e2db 100%); }
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer; }
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  size: 40px;
+  margin-top: 150px;
+  margin-left: 150px;
+  position: absolute; }
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-top: 150px;
+  margin-left: 150px; }
+
+#button {
+  background-color: #555555;
+  /* Black */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer; }
+
+#run {
+  background-color: white; }
+
+#pokemon:not(:focus) {
+  font-style: italic; }
+
+.button {
+  cursor: pointer; }
+
+.description {
+  display: inline-block;
+  position: absolute;
+  top: 4vh;
+  right: 7vh;
+  box-shadow: -0.5vh 0.5vh 0vh 0.5vh rgba(0, 0, 0, 0.3) inset;
+  background: white;
+  height: 15vh;
+  text-align: left;
+  width: 45vh;
+  font-family: 'VT323', monospace;
+  font-size: 4vh;
+  color: grey;
+  border-radius: .5vh;
+  z-index: 1; }
+
+.height {
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  box-shadow: -0.5vh 0.5vh 0vh 0.5vh rgba(0, 0, 0, 0.3) inset;
+  background: white;
+  height: 10vh;
+  text-align: left;
+  width: 22vh;
+  font-family: 'VT323', monospace;
+  font-size: 4vh;
+  color: gray;
+  z-index: 1;
+  border-radius: .5vh; }
+
+.inputBar {
+  position: absolute;
+  bottom: 80%;
+  left: 10%; }
+
+.arrows {
+  position: absolute;
+  bottom: 50px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
