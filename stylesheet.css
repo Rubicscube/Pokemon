@@ -29,11 +29,21 @@ i {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  cursor: pointer; }
+  cursor: pointer;
+  position: absolute;
+  right: 500px;
+  top: 380px; }
 
-.images {
+#main-pokemon {
   width: 100px;
   height: 100px; }
+
+#pre-evolution {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 70px;
+  bottom: 10px; }
 
 #run {
   background-color: white; }
@@ -44,8 +54,8 @@ i {
 #Moves {
   display: inline-block;
   position: absolute;
-  top: 4vh;
-  right: 7vh;
+  top: 80px;
+  right: 600px;
   box-shadow: -0.5vh 0.5vh 0vh 0.5vh rgba(0, 0, 0, 0.3) inset;
   background: white;
   height: 15vh;
@@ -61,5 +71,13 @@ i {
   position: absolute;
   bottom: 80%;
   left: 10%; }
+
+#prev {
+  position: absolute;
+  left: 140px; }
+
+#next {
+  position: absolute;
+  left: 280px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

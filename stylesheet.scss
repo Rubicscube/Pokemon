@@ -2,15 +2,17 @@
   transition: all 0.5s ease;
 
 }
-#CONTAINER{
+
+#CONTAINER {
   border: 1px solid red;
 }
-body{
-  margin:0;
-  padding:0;
+
+body {
+  margin: 0;
+  padding: 0;
   text-align: center;
   background-size: cover;
-  background: linear-gradient(90deg, rgba(15,122,3,1) 47%, rgba(37,226,219,1) 100%);
+  background: linear-gradient(90deg, rgba(15, 122, 3, 1) 47%, rgba(37, 226, 219, 1) 100%);
   font-family: 'VT323', monospace;
 
 }
@@ -24,8 +26,6 @@ i {
 }
 
 
-
-
 #button {
   background-color: #555555; /* Black */
   border: none;
@@ -36,50 +36,74 @@ i {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  position: absolute;
+  right: 500px;
+  top: 380px;
 
 
 }
 
-.images{
+#main-pokemon {
   width: 100px;
   height: 100px;
 }
 
-#run{
+#pre-evolution{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 70px;
+  bottom: 10px;
+}
+
+#run {
   background-color: white;
 }
 
 
 #pokemon:not(:focus) {
-  font-style:italic;
+  font-style: italic;
 
 }
 
 
-
-#Moves{
+#Moves {
   display: inline-block;
   position: absolute;
-  top:4vh;
-  right:7vh;
+  top: 80px;
+  right: 600px;
   box-shadow: -.5vh .5vh 0vh .5vh rgba(0, 0, 0, 0.3) inset;
   background: white;
   height: 15vh;
-  width:45vh;
+  width: 45vh;
   color: grey;
   border-radius: .5vh;
-  z-index:1;
+  z-index: 1;
+
 
 }
-.movement{
+
+.movement {
   font-size: 4vh;
 }
 
 
-.input-field{
+.input-field {
 
   position: absolute;
   bottom: 80%;
   left: 10%;
+}
+
+#prev {
+
+  position: absolute;
+  left: 140px;
+
+}
+
+#next {
+  position: absolute;
+  left: 280px;
 }
 
