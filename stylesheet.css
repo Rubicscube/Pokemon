@@ -19,7 +19,7 @@ i {
   padding: 3px;
   cursor: pointer; }
 
-#button {
+#help {
   background-color: #555555;
   /* Black */
   border: none;
@@ -43,7 +43,7 @@ i {
   height: 70px;
   position: absolute;
   left: 70px;
-  bottom: 10px; }
+  top: 300px; }
 
 #run {
   background-color: white; }
