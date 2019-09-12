@@ -11,6 +11,7 @@ body{
   text-align: center;
   background-size: cover;
   background: linear-gradient(90deg, rgba(15,122,3,1) 47%, rgba(37,226,219,1) 100%);
+  font-family: 'VT323', monospace;
 
 }
 
@@ -22,24 +23,8 @@ i {
   cursor: pointer;
 }
 
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  size: 40px;
-  margin-top: 150px;
-  margin-left: 150px;
-  position: absolute;
-
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  margin-top: 150px;
-  margin-left: 150px;
 
 
-}
 
 #button {
   background-color: #555555; /* Black */
@@ -55,6 +40,11 @@ i {
 
 }
 
+.images{
+  width: 100px;
+  height: 100px;
+}
+
 #run{
   background-color: white;
 }
@@ -65,11 +55,9 @@ i {
 
 }
 
-.button{
-  cursor: pointer;
-}
 
-.description{
+
+#Moves{
   display: inline-block;
   position: absolute;
   top:4vh;
@@ -77,44 +65,21 @@ i {
   box-shadow: -.5vh .5vh 0vh .5vh rgba(0, 0, 0, 0.3) inset;
   background: white;
   height: 15vh;
-  text-align: left;
   width:45vh;
-  font-family: 'VT323', monospace;
-  font-size: 4vh;
   color: grey;
   border-radius: .5vh;
   z-index:1;
 
 }
-
-.height{
-  display: inline-block;
-  position: absolute;
-  top:20%;
-  left:50%;
-  box-shadow: -.5vh .5vh 0vh .5vh rgba(0, 0, 0, 0.3) inset;
-  background: white;
-  height: 10vh;
-  text-align: left;
-  width:22vh;
-  font-family: 'VT323', monospace;
+.movement{
   font-size: 4vh;
-  color: gray;
-  z-index:1;
-  border-radius: .5vh;
 }
 
-.inputBar{
+
+.input-field{
 
   position: absolute;
   bottom: 80%;
   left: 10%;
 }
 
-.arrows{
-
-  position: absolute;
-  bottom: 50px;
-
-
-}
