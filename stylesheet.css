@@ -7,8 +7,7 @@ body {
   text-align: center;
   background-size: cover;
   font-family: 'VT323', monospace;
-  background-image: url("images/pokeball.jpg");
-  color: yellow; }
+  background-image: url("images/pokeball.jpg"); }
 
 i {
   border: solid black;
@@ -18,8 +17,8 @@ i {
   cursor: pointer; }
 
 #main-pokemon {
-  width: 100px;
-  height: 100px; }
+  width: 135px;
+  height: 125px; }
 
 #pre-evolution {
   width: 70px;
@@ -56,5 +55,11 @@ i {
 
 .info {
   font-size: 4vh; }
+
+#name {
+  color: white; }
+
+.pokeID {
+  color: white; }
 
 /*# sourceMappingURL=stylesheet.css.map */

@@ -11,7 +11,6 @@ body {
   background-size: cover;
   font-family: 'VT323', monospace;
   background-image: url("images/pokeball.jpg");
-  color: yellow;
 
 
 
@@ -28,8 +27,8 @@ i {
 
 
 #main-pokemon {
-  width: 100px;
-  height: 100px;
+  width: 135px;
+  height: 125px;
 }
 
 #pre-evolution{
@@ -100,4 +99,13 @@ i {
 
 .info{
   font-size: 4vh;
+}
+
+
+#name{
+  color: white;
+}
+
+.pokeID{
+  color: white;
 }
