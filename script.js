@@ -53,9 +53,7 @@ function fetcher(input){
             return response.json();
         })
         .then(function(pokemon) {
-            //ALL THE INFO
             console.log(pokemon);
-
 
             //ID
             //console.log(pokemon.id);
@@ -98,13 +96,30 @@ function fetcher(input){
                 }
             }
 
+            //TYPES
+            console.log(pokemon.types[0].type.name);
+
+            //HP
+            console.log(pokemon.stats[5].stat.name);
+            console.log(pokemon.stats[5].base_stat);
+
+            document.getElementById("hp").innerText = pokemon.stats[5].base_stat;
+
+            //HEIGHT and WEIGHT
+            console.log("height: " + pokemon.height);
+            document.getElementById("height").innerText = pokemon.height;
+            console.log("weight: " + pokemon.weight);
+            document.getElementById("weight").innerText = pokemon.weight;
+
+
+
             //CHECK FOR EVOLUTIONS
             fetch (pokemon.species.url)
                 .then(function(response){
                 return response.json();
             })
                 .then(function(species) {
-                    console.log(species.evolves_from_species);
+                    //console.log(species.evolves_from_species);
                     if (species.evolves_from_species != null){
                         document.getElementById("evolutions").style.display = "block";
 
