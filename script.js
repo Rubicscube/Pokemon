@@ -31,7 +31,6 @@ document.getElementById("prev").addEventListener("click", function(){
     console.log(input);
     fetcher(input);
 
-
 });
 
 //NEXT BUTTON
@@ -46,6 +45,83 @@ document.getElementById("next").addEventListener("click", function(){
     fetcher(input);
 
 });
+
+//IMAGE FRONT BUTTON
+document.getElementById("front").addEventListener("click", function(){
+    let input = document.getElementById("name").innerText.toLowerCase();
+    fetch(api_url+input)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(pokemon) {
+            console.log(pokemon);
+
+            if (pokemon.sprites.front_default != null){
+                document.getElementById("main-pokemon").setAttribute("src", pokemon.sprites.front_default);
+            }
+            else{
+                document.getElementById("main-pokemon").setAttribute("src", "./images/questionmark.png");
+            }
+        })
+});
+
+//IMAGE BACK BUTTON
+document.getElementById("back").addEventListener("click", function(){
+    let input = document.getElementById("name").innerText.toLowerCase();
+    fetch(api_url+input)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(pokemon) {
+            console.log(pokemon);
+
+            if (pokemon.sprites.back_default != null){
+                document.getElementById("main-pokemon").setAttribute("src", pokemon.sprites.back_default);
+            }
+            else{
+                document.getElementById("main-pokemon").setAttribute("src", "./images/questionmark.png");
+            }
+        })
+});
+
+//IMAGE SHINY BUTTON
+document.getElementById("shiny").addEventListener("click", function(){
+    let input = document.getElementById("name").innerText.toLowerCase();
+    fetch(api_url+input)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(pokemon) {
+            console.log(pokemon);
+
+            if (pokemon.sprites.front_shiny != null){
+                document.getElementById("main-pokemon").setAttribute("src", pokemon.sprites.front_shiny);
+            }
+            else{
+                document.getElementById("main-pokemon").setAttribute("src", "./images/questionmark.png");
+            }
+        })
+});
+
+//IMAGE SHINY BACK BUTTON
+document.getElementById("shiny-back").addEventListener("click", function(){
+    let input = document.getElementById("name").innerText.toLowerCase();
+    fetch(api_url+input)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(pokemon) {
+            console.log(pokemon);
+
+            if (pokemon.sprites.back_shiny != null){
+                document.getElementById("main-pokemon").setAttribute("src", pokemon.sprites.back_shiny);
+            }
+            else{
+                document.getElementById("main-pokemon").setAttribute("src", "./images/questionmark.png");
+            }
+        })
+});
+
 
 
 function fetcher(input){
@@ -138,8 +214,12 @@ function fetcher(input){
                             .then(function (previous) {
 
                                 document.getElementById("preName").innerText = "#"+previous.id+ " "+ previous.name.toUpperCase();
-                                document.getElementById("pre-evolution").setAttribute("src", previous.sprites.front_default);
-
+                                if (previous.sprites.front_default != null){
+                                    document.getElementById("pre-evolution").setAttribute("src", previous.sprites.front_default);
+                                }
+                                else{
+                                    document.getElementById("pre-evolution").setAttribute("src", "./images/questionmark.png");
+                                }
                             });
                     }
                     else{
