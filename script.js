@@ -99,10 +99,17 @@ function fetcher(input){
             //TYPES
             console.log(pokemon.types[0].type.name);
 
-            //HP
-            console.log(pokemon.stats[5].stat.name);
-            console.log(pokemon.stats[5].base_stat);
+            for (let i = 0; i < pokemon.types.length; i++) {
+                //console.log(pokemon.moves[i].move.name);
 
+                let node = document.createElement("LI");
+                let textnode = document.createTextNode(pokemon.types[i].type.name);
+                node.appendChild(textnode);
+                document.getElementById("type").appendChild(node);
+            }
+
+            //HP
+            console.log(pokemon.stats[5].base_stat);
             document.getElementById("hp").innerText = pokemon.stats[5].base_stat;
 
             //HEIGHT and WEIGHT
