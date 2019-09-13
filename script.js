@@ -8,7 +8,8 @@ window.addEventListener('load', function() {
 });
 
 //SEARCH BUTTON
-document.getElementById("run").addEventListener("click", function(){
+document.getElementById("search").addEventListener("submit", function(event){
+    event.preventDefault();
     clear();
     let input = document.getElementById('pokemon').value.toLowerCase();
     //clear out all the <li>'s in current <ul>
