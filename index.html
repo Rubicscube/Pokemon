@@ -2,71 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Poke dex</title>
 </head>
 <body>
 <div id="CONTAINER" class="container m-5 p-5">
-    <div id="info">
-        <span>#</span><span id="id"></span>
-        <h1 id="name"></h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-field">
+
+                <form id="search">
+                    <input id="pokemon" type="text" name="input-field" placeholder="Enter name or ID">
+                    <button id="run" class="button" type="submit">Search</button>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div id="info">
+                <span>#</span><span id="id"></span>
+                <h1 id="name"></h1>
+                <div class="pokemonimage m-5 p-5">
+
+                    <img id="main-pokemon">
+
+                </div>
+                <div id="evolutions">
+                    <p>Evolution of</p>
+                    <img id="pre-evolution">
+                    <p id="preName" href=""></p>
+                </div>
+                <div class="arrows">
+                    <button id="prev">&lt;</button>
+                    <button id="next">&gt;</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <div id="information-pokemon">
+
+                <p class="info">Info</p>
+                <p>Type:</p>
+                <ul id="type">
+
+                </ul>
+                <p>Height: <span id="height"></span></p>
+
+                <p>Weight: <span id="weight"></span></p>
+
+                <p>HP: <span id="hp"></span></p>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div id="Moves">
+
+                <p class="movement">Moves</p>
+                <ul id="move-list">
+
+
+                </ul>
+            </div>
+
+        </div>
     </div>
 
-    <div class="pokemonimage m-5 p-5">
-
-        <img id="main-pokemon">
 
 
-    </div>
-
-    <div class="input-field">
-
-        <form>
-            <input id="pokemon" type="text" name="input-field" placeholder="Enter name or ID" type="submit">
-            <button id="run" class="button" type="button">Search</button>
-        </form>
 
 
-    </div>
-
-    <div id="evolutions">
-        <p>Evolution of</p>
-        <img id="pre-evolution">
-        <p id="preName" href=""></p>
-    </div>
-
-    <div id="Moves">
-
-        <p class="movement">Moves</p>
-        <ul id="move-list">
 
 
-        </ul>
-    </div>
 
-    <div id="information-pokemon">
-
-        <p class="info">Info</p>
-        <p>Type:</p>
-        <ul id="type">
-
-        </ul>
-        <p>Height: <span id="height"></span></p>
-
-        <p>Weight: <span id="weight"></span></p>
-
-        <p>HP: <span id="hp"></span></p>
-
-
-    </div>
-
-    <div class="arrows">
-        <button id="prev">&lt;</button>
-        <button id="next">&gt;</button>
-
-    </div>
 
 </div>
 
