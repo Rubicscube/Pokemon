@@ -26,26 +26,10 @@ i {
 }
 
 
-#help {
-  background-color: #555555; /* Black */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  position: absolute;
-  right: 500px;
-  top: 380px;
-
-
-}
 
 #main-pokemon {
-  width: 100px;
-  height: 100px;
+  width: 20%;
+  height: 20%;
 }
 
 #pre-evolution{
@@ -71,10 +55,10 @@ i {
   display: inline-block;
   position: absolute;
   top: 80px;
-  right: 600px;
+  right: 430px;
   box-shadow: -.5vh .5vh 0vh .5vh rgba(0, 0, 0, 0.3) inset;
   background: white;
-  height: 15vh;
+  height: 40vh;
   width: 45vh;
   color: grey;
   border-radius: .5vh;
@@ -91,8 +75,8 @@ i {
 .input-field {
 
   position: absolute;
-  bottom: 80%;
-  left: 10%;
+  bottom: 83%;
+  left: 7%;
 }
 
 #prev {
@@ -107,3 +91,25 @@ i {
   left: 280px;
 }
 
+#information-pokemon{
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  right: 790px;
+  box-shadow: -.5vh .5vh 0vh .5vh rgba(0, 0, 0, 0.3) inset;
+  background: white;
+  height: 40vh;
+  width: 45vh;
+  color: grey;
+  border-radius: .5vh;
+  z-index: 1;
+}
+
+#info{
+  position: absolute;
+  top: 20%;
+}
+
+.info{
+  font-size: 4vh;
+}
