@@ -150,4 +150,5 @@ function fetcher(input){
 
 function clear(){
     document.getElementById("move-list").innerHTML = "";
+    document.getElementById("type").innerHTML = "";
 }
