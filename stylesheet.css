@@ -1,18 +1,14 @@
 * {
   transition: all 0.5s ease; }
 
-#CONTAINER {
-  border: 1px solid red; }
-
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   background-size: cover;
-  background: linear-gradient(90deg, #0f7a03 47%, #25e2db 100%);
   font-family: 'VT323', monospace;
-  background-image: url("images/favicon.png");
-  background-size: cover; }
+  background-image: url("images/pokeball.jpg");
+  color: yellow; }
 
 i {
   border: solid black;
