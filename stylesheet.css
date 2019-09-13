@@ -10,7 +10,9 @@ body {
   text-align: center;
   background-size: cover;
   background: linear-gradient(90deg, #0f7a03 47%, #25e2db 100%);
-  font-family: 'VT323', monospace; }
+  font-family: 'VT323', monospace;
+  background-image: url("images/favicon.png");
+  background-size: cover; }
 
 i {
   border: solid black;
